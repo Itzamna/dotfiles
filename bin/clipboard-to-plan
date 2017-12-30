@@ -1,0 +1,9 @@
+#!/bin/bash
+. ~/.bashrc
+PLAN_WIKI=~/.db/wiki/plan.md
+echo >> $PLAN_WIKI
+echo "# $(date) " >> $PLAN_WIKI
+echo "$(xclip -o)" >> $PLAN_WIKI
+echo "" >> $PLAN_WIKI
+echo "" >> $PLAN_WIKI
+echo "Copied: $(xclip -o | cut -b 1-50 | sed 's/[^[:print:]]//g')" | dzen2-wrapper green
