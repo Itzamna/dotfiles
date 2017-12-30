@@ -1,0 +1,4 @@
+#!/bin/bash
+BG='#ffee00'
+if [ "$1" ]; then BG="$1"; fi
+notify-send "Dzen2 wrapper" "$(cat /dev/stdin)"
