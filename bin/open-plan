@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ~/.db/wiki
+notepadqq plan.md
+xdotool mousemove 15 100
+xdotool click 1
